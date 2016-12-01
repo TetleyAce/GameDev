@@ -33,7 +33,7 @@
         var x = canvas.width / 2;
         var y = canvas.height - 30;
 
-        var ballRadius = 10;
+        var ballRadius = (canvas.height * 0.2);
 
         var dx = 2;
         var dy = -2;
@@ -101,11 +101,11 @@
 
         //Resize Bricks
 
-        brickWidth = canvas.width * 0.15625;
-        brickHeight = canvas.height * 0.0625;
-        brickPadding = canvas.height * 0.03125;
-        brickOffsetTop = canvas.height * 0.09375;
-        brickOffsetLeft = canvas.width * 0.0525;
+        brickWidth = canvas.width * 0.15;
+        brickHeight = canvas.height * 0.05;
+        brickPadding = canvas.width * 0.01;
+        brickOffsetTop = canvas.height * 0.05;
+        brickOffsetLeft = canvas.width * 0.1;
 
         //Drawing...
 
@@ -129,8 +129,8 @@
 
         //Resize
 
-        paddleWidth = canvas.width * 0.15625;
-        paddleHeight = canvas.height * 0.03125;
+        paddleWidth = canvas.width * 0.2;
+        paddleHeight = canvas.height * 0.02;
 
         //Drawing
         function drawPaddle() {
@@ -145,7 +145,7 @@
 
         //Resize
 
-        ballRadius = canvas.height * 0.03125;
+       // ballRadius = (canvas.height * 0.03125) / 2;
 
         //Drawing...
         function drawBall() {
